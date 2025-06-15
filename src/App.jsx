@@ -13,7 +13,10 @@ export default function App() {
         />
 
         {/* Başlık */}
-        <h1 className="text-5xl font-bold mb-4"> XombiX</h1>
+        <span className="text-lg text-red-400 font-semibold tracking-wide">
+  First stop: Mars.
+</span>
+
 
         {/* Açıklama */}
         <p className="text-xl mb-6">
