@@ -13,9 +13,10 @@ export default function App() {
         />
 
         {/* Başlık */}
-        <span className="text-lg text-red-400 font-semibold tracking-wide">
-  First stop: Mars.
+        <span className="text-2xl text-orange-400 font-bold tracking-wide">
+  First stop: MARS
 </span>
+
 
 
         {/* Açıklama */}
