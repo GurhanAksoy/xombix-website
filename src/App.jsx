@@ -28,13 +28,16 @@ export default function App() {
         </p>
 
         {/* Buton */}
-        <a href="#presale" className="block mx-auto w-48 hover:scale-105 transition-transform duration-300">
-  <img
-    src="/join-the-presale.png"
-    alt="Join the Presale"
-    className="w-full"
-  />
-</a>
+        <div className="mt-8">
+  <a href="#presale" className="block mx-auto w-48 hover:scale-105 transition-transform duration-300">
+    <img
+      src="/join-the-presale.png"
+      alt="Join the Presale"
+      className="w-full"
+    />
+  </a>
+</div>
+
 
       </section>
     </main>
