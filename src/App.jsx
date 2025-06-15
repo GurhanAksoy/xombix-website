@@ -18,14 +18,12 @@ export default function App() {
 
 </span>
 
-
-
         {/* Açıklama */}
-        <p className="text-xl mb-6">
+        <p className="text-xl mt-4 mb-6">
           From ape to man. From coin to XombiX
         </p>
 
-        <p className="text-lg mb-8 italic text-red-400">
+        <p className="text-lg mb-8 italic text-purple-400">
           This is not just a coin. This is XombiX
         </p>
 
