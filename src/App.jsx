@@ -28,12 +28,14 @@ export default function App() {
         </p>
 
         {/* Buton */}
-        <a
-          href="#presale"
-          className="inline-block bg-white text-black px-6 py-3 rounded-2xl text-lg font-semibold transition duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:text-white"
-        >
-          Join the Presale
-        </a>
+        <a href="#presale" className="block mx-auto w-48 hover:scale-105 transition-transform duration-300">
+  <img
+    src="/join-the-presale.png"
+    alt="Join the Presale"
+    className="w-full"
+  />
+</a>
+
       </section>
     </main>
   );
