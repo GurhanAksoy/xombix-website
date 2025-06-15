@@ -15,6 +15,7 @@ export default function App() {
         {/* Başlık */}
         <span className="text-2xl text-orange-400 font-bold tracking-wide">
   First stop: MARS
+
 </span>
 
 
@@ -24,7 +25,7 @@ export default function App() {
           From ape to man. From coin to XombiX
         </p>
 
-        <p className="text-lg mb-8 italic text-gray-400">
+        <p className="text-lg mb-8 italic text-red-400">
           This is not just a coin. This is XombiX
         </p>
 
