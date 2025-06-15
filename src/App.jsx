@@ -23,7 +23,7 @@ export default function App() {
           From ape to man. From coin to XombiX
         </p>
 
-        <p className="text-lg mb-8 italic text-purple-400">
+        <p className="text-lg mb-8 italic text-gray-400">
           This is not just a coin. This is XombiX
         </p>
 
