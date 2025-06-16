@@ -4,8 +4,6 @@ import Home from "./components/Home";
 import Whitepaper from "./components/Whitepaper";
 import Navbar from "./components/Navbar";
 import Presale from "./pages/Presale";
-// Routing updated - XombiX
-
 
 export default function App() {
   return (
