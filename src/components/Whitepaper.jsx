@@ -12,3 +12,11 @@ export default function Whitepaper() {
     </main>
   );
 }
+
+<a
+  href="/xombix-whitepaper.pdf"
+  download
+  className="block mt-10 text-center text-orange-300 underline hover:text-orange-200"
+>
+  ⬇ Download PDF
+</a>
