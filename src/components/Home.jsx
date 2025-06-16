@@ -20,8 +20,8 @@ export default function Home() {
           This is not just a coin. This is XombiX
         </p>
 
-        {/* 🔽 Bu kısmı değiştirdik */}
-        <div id="presale" className="mt-8">
+        {/* Görsel buton */}
+        <div className="mt-8">
           <a
             href="/whitepaper"
             className="block mx-auto w-48 hover:scale-105 transition-transform duration-300"
@@ -33,6 +33,22 @@ export default function Home() {
             />
           </a>
         </div>
+      </section>
+
+      {/* Presale Bilgi Bölümü */}
+      <section id="presale" className="mt-32 text-center max-w-2xl mx-auto">
+        <h2 className="text-3xl font-bold text-orange-400 mb-4">Join the XombiX Presale</h2>
+        <p className="mb-4 text-gray-300">
+          Only <span className="font-semibold text-white">500 participants</span> will be accepted.<br />
+          Fixed amount: <span className="text-green-400 font-semibold">77,700 XOMBIX</span> per wallet.<br />
+          Price: <span className="text-green-400 font-semibold">$0.00077</span> per token.
+        </p>
+        <button
+          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl shadow-md transition duration-300"
+          disabled
+        >
+          🔒 Presale Not Open Yet
+        </button>
       </section>
     </main>
   );
