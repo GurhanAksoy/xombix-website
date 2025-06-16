@@ -1,16 +1,14 @@
 import React from "react";
 
 export default function Whitepaper() {
-  console.log("✅ Whitepaper bileşeni başarıyla render edildi.");
-
   return (
-    <div style={{ backgroundColor: "#000", minHeight: "100vh", padding: "40px", color: "#0f0", fontFamily: "monospace" }}>
-      <h1 style={{ fontSize: '48px', textAlign: 'center' }}>
-        XombiX Whitepaper Aktif
+    <main className="min-h-screen bg-black text-white px-10 py-12 font-mono">
+      <h1 className="text-3xl text-orange-400 font-bold text-center mb-6">
+        XombiX Whitepaper v1.0
       </h1>
-      <p style={{ fontSize: '24px', textAlign: 'center', marginTop: '20px' }}>
-        Bu sayfa başarıyla yüklendi ve görünüyor 🛠️✨
+      <p className="text-lg text-center">
+        This is not just a whitepaper. It’s a meme-fueled manifesto.
       </p>
-    </div>
+    </main>
   );
 }
