@@ -26,4 +26,8 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/whitepaper" elemen
+        <Route path="/whitepaper" element={<Whitepaper />} />
+      </Routes>
+    </Router>
+  );
+}
