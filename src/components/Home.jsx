@@ -20,7 +20,8 @@ export default function Home() {
           This is not just a coin. This is XombiX
         </p>
 
-        <div className="mt-8">
+        {/* 🔽 Bu kısmı değiştirdik */}
+        <div id="presale" className="mt-8">
           <a
             href="/whitepaper"
             className="block mx-auto w-48 hover:scale-105 transition-transform duration-300"
