@@ -157,19 +157,24 @@ export default function Whitepaper() {
         <p className="text-center text-2xl mt-4 font-bold text-red-400">**XombiX**</p>
       </section>
 
-      <p className="text-sm text-center mt-10 text-gray-500 italic">v1.0 – June 2025<br/>
+     {/* 📥 PDF Download Button */}
+      <div className="text-center mt-12">
+        <a
+          href="/xombix-whitepaper.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl shadow-md transition duration-300"
+          download
+        >
+          📥 Download Whitepaper (PDF)
+        </a>
+      </div>
+
+      {/* Footer */}
+      <p className="text-sm text-center mt-10 text-gray-500 italic">
+        v1.0 – June 2025<br />
         XombiX Project © 2025 | MemeDAO powered | www.xombix.com
       </p>
     </main>
   );
 }
-
-<div className="text-center mt-8">
-  <a
-    href="/xombix-whitepaper.pdf"
-    download
-    className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-xl shadow-lg transition duration-300"
-  >
-    📥 Download PDF
-  </a>
-</div>
