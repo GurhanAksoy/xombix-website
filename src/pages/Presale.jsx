@@ -2,29 +2,27 @@ import React from "react";
 
 export default function Presale() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-indigo-900 to-blue-900 text-white px-6 py-16 font-mono text-center">
-      <h1 className="text-4xl font-bold text-orange-400 mb-8">Join the XombiX Presale</h1>
+    <main className="min-h-screen bg-black text-white px-6 py-12 font-mono">
+      <section className="max-w-2xl mx-auto text-center">
+        <h1 className="text-3xl font-bold text-orange-400 mb-6">Join the XombiX Presale</h1>
 
-      <p className="mb-4 text-lg">
-        <span className="font-bold text-green-400">Only 500 participants</span> will be accepted.
-      </p>
-      <p className="mb-4 text-lg">
-        <span className="font-bold text-green-400">Fixed amount:</span> 77,700 XOMBIX per wallet.
-      </p>
-      <p className="mb-8 text-lg">
-        <span className="font-bold text-green-400">Price:</span> $0.00077 per token.
-      </p>
+        <p className="mb-4 text-gray-300">
+          Only <span className="font-semibold text-white">500 participants</span> will be accepted.
+        </p>
+        <p className="mb-4 text-gray-300">
+          Fixed amount: <span className="text-green-400 font-semibold">77,700 XOMBIX</span> per wallet.
+        </p>
+        <p className="mb-6 text-gray-300">
+          Price: <span className="text-green-400 font-semibold">$0.00077</span> per token.
+        </p>
 
-      <div className="mb-8 text-gray-300">
-        <p>Total sold: <span className="font-bold text-white">0 / 500</span></p>
-      </div>
-
-      <button
-        className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg transition duration-300"
-        disabled
-      >
-        🔒 Presale Not Open Yet
-      </button>
+        <button
+          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl shadow-md transition duration-300"
+          disabled
+        >
+          🔒 Presale Not Open Yet
+        </button>
+      </section>
     </main>
   );
 }
