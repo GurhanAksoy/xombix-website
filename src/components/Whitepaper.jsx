@@ -163,3 +163,13 @@ export default function Whitepaper() {
     </main>
   );
 }
+
+<div className="text-center mt-8">
+  <a
+    href="/xombix-whitepaper.pdf"
+    download
+    className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-xl shadow-lg transition duration-300"
+  >
+    📥 Download PDF
+  </a>
+</div>
