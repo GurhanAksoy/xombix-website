@@ -43,3 +43,11 @@ export default function App() {
     </main>
   );
 }
+
+<a
+  href="/whitepaper"
+  className="inline-block mt-6 px-4 py-2 bg-orange-500 text-white rounded-xl shadow hover:bg-orange-600 transition"
+>
+  View Whitepaper
+</a>
+
