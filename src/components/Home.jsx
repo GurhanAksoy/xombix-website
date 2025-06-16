@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Home() {
+  // Sayfa yüklendiğinde URL'de #presale varsa otomatik scroll
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === "#presale") {
+      const target = document.getElementById("presale");
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    }
+  }, []);
+
+  // Görsel butona tıklanınca scroll
+  const handlePresaleClick = (e) => {
+    e.preventDefault();
+    const target = document.getElementById("presale");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-black via-indigo-900 to-blue-900 text-white px-6 py-10 font-mono">
       <section className="text-center max-w-3xl mx-auto">
@@ -20,10 +42,11 @@ export default function Home() {
           This is not just a coin. This is XombiX
         </p>
 
-        {/* Görsel buton */}
+        {/* 🎯 Görsel Presale Butonu */}
         <div className="mt-8">
           <a
-            href="/whitepaper"
+            href="#presale"
+            onClick={handlePresaleClick}
             className="block mx-auto w-48 hover:scale-105 transition-transform duration-300"
           >
             <img
@@ -35,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Presale Bilgi Bölümü */}
+      {/* 🪙 Presale Bilgi Bölümü */}
       <section id="presale" className="mt-32 text-center max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold text-orange-400 mb-4">Join the XombiX Presale</h2>
         <p className="mb-4 text-gray-300">
