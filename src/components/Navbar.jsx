@@ -1,22 +1,13 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
-  const navigate = useNavigate();
 
   // 🏠 Home butonu davranışı
   const handleHomeClick = (e) => {
     e.preventDefault();
-
-    if (location.pathname === "/") {
-      // Anasayfadaysak hash’i sıfırla ve yukarı kaydır
-      window.history.replaceState(null, "", "/");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      // Başka sayfadaysak sadece yönlendir
-      navigate("/");
-    }
+    window.location.replace("/");
   };
 
   // 💰 Presale butonu davranışı
@@ -24,10 +15,8 @@ export default function Navbar() {
     e.preventDefault();
 
     if (location.pathname !== "/") {
-      // Başka sayfadaysan direkt yönlendir
       window.location.href = "/#presale";
     } else {
-      // Aynı sayfadaysan scroll
       const target = document.getElementById("presale");
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
