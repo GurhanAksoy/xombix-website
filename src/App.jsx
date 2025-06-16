@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Whitepaper from "./components/WhitepaperTEMP";
+import Whitepaper from "./components/Whitepaper";
 
 export default function App() {
   return (
