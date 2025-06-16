@@ -8,7 +8,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Whitepaper" element={<Whitepaper />} />
+        <Route path="/whitepaper" element={<Whitepaper />} />
       </Routes>
     </Router>
   );
