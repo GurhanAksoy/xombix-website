@@ -27,4 +27,16 @@ body {
   z-index: 0;
   pointer-events: none;
   background: radial-gradient(white 1px, transparent 1px), transparent;
-  background-size: 3px 3px
+  background-size: 3px 3px;
+  animation: starMove 100s linear infinite;
+  opacity: 0.03;
+}
+
+@keyframes starMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
