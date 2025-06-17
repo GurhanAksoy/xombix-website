@@ -1,43 +1,48 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    const playAnthem = () => {
-      const audio = new Audio("/xombix.mp3");
-      audio.volume = 1;
-      audio.play().catch((err) => {
-        console.error("XombiX marş çalma hatası:", err);
-      });
+  const audioRef = useRef(null);
 
-      window.removeEventListener("click", playAnthem);
+  useEffect(() => {
+    const playMarsh = () => {
+      if (audioRef.current) {
+        audioRef.current.volume = 1;
+        audioRef.current.play().catch((err) => {
+          console.error("Marş çalamadı:", err);
+        });
+        window.removeEventListener("click", playMarsh);
+      }
     };
 
-    window.addEventListener("click", playAnthem);
+    window.addEventListener("click", playMarsh);
 
     return () => {
-      window.removeEventListener("click", playAnthem);
+      window.removeEventListener("click", playMarsh);
     };
   }, []);
 
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-12 text-center font-mono">
-      <h1 className="text-5xl font-extrabold text-orange-400 mb-8">
-        👑 XombiX Coin
+    <main className="min-h-screen bg-black text-white px-6 py-20 text-center font-mono">
+      {/* GİZLİ AUDIO */}
+      <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
+
+      <h1 className="text-5xl font-extrabold text-orange-400 mb-6">
+        🧠 XombiX
       </h1>
 
-      <p className="text-xl text-gray-300 mb-4">
-        Welcome to the ultimate meme token that makes the system question itself.
+      <p className="text-lg text-gray-300 mb-4">
+        The meme coin that infects your soul and your browser.
       </p>
 
-      <p className="text-lg text-green-400 mb-8">
-        Your entry point to chaos, comedy, and cosmic crypto energy.
+      <p className="text-md text-green-400 mb-8">
+        Welcome to chaos. One click, and you're in.
       </p>
 
       <a
         href="/presale"
-        className="inline-block mt-4 bg-green-500 text-black font-bold px-6 py-3 rounded-full shadow-lg hover:bg-green-400 transition"
+        className="inline-block bg-green-500 hover:bg-green-400 text-black font-bold px-6 py-3 rounded-full shadow-lg transition"
       >
-        🚀 Join the Presale
+        🚀 Join Presale
       </a>
     </main>
   );
