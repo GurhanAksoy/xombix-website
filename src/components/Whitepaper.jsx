@@ -118,11 +118,17 @@ export default function Whitepaper() {
         <p>Not financial advice. DYOR.<br />If a project screams “to the moon” without explaining how gravity works — run.</p>
       </section>
 
-      <footer className="mt-12 text-center text-gray-500 text-sm">
-        This is not just a token. It's a torch. We carry memes instead of weapons.<br />
-        We build laughter into the blockchain. And when they ask what we are, we simply say:<br />
-        <span className="text-orange-300 font-bold text-xl mt-2 inline-block">XombiX</span><br />
-        <p className="mt-4">v1.0 – June 2025<br />XombiX Project © 2025 | MemeDAO powered | www.xombix.com</p>
+      <footer className="mt-12 text-center text-gray-300 text-base leading-relaxed">
+        <p className="font-semibold italic mb-2">
+          This is not just a token. It's a torch.  <br />
+          We carry memes instead of weapons.<br />
+          We build laughter into the blockchain.
+        </p>
+        <p className="text-orange-300 font-extrabold text-lg mb-4">XombiX</p>
+        <p className="text-sm text-gray-400">
+          v1.0 – June 2025<br />
+          XombiX Project © 2025 | MemeDAO powered | www.xombix.com
+        </p>
       </footer>
     </main>
   );
