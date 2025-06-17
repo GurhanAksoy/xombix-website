@@ -57,6 +57,14 @@ export default function Home() {
           </a>
         </div>
       </section>
+{/* 🎧 XombiX Anthem */}
+<div className="mt-12 text-center">
+  <p className="mb-2 text-orange-400 font-semibold">🎵 XombiX Anthem</p>
+  <audio controls className="mx-auto w-full max-w-md">
+    <source src="/XombiX.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</div>
 
       {/* 🪙 Presale Bilgi Bölümü */}
       <section id="presale" className="mt-32 text-center max-w-2xl mx-auto">
