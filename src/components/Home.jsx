@@ -22,28 +22,39 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-20 text-center font-mono">
-      {/* GİZLİ AUDIO */}
+    <main className="min-h-screen bg-black text-white text-center px-6 py-12 font-mono">
+      {/* MARŞ AUDIO */}
       <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
 
-      <h1 className="text-5xl font-extrabold text-orange-400 mb-6">
-        🧠 XombiX
+      {/* LOGO */}
+      <div className="flex justify-center mb-6">
+        <img src="/xombix-logo.jpg" alt="XombiX Logo" className="w-48 h-48 rounded-xl shadow-lg" />
+      </div>
+
+      {/* BAŞLIK */}
+      <h1 className="text-4xl font-extrabold text-orange-400 mb-4">
+        First stop: MARS
       </h1>
 
-      <p className="text-lg text-gray-300 mb-4">
-        The meme coin that infects your soul and your browser.
+      {/* ALT METİN */}
+      <p className="text-lg text-gray-300 mb-6">
+        From ape to man. From coin to <span className="text-white font-bold">XombiX</span>
       </p>
 
-      <p className="text-md text-green-400 mb-8">
-        Welcome to chaos. One click, and you're in.
+      <p className="italic text-sm text-gray-400 mb-10">
+        This is not just a coin. This is <span className="text-orange-300">XombiX</span>
       </p>
 
-      <a
-        href="/presale"
-        className="inline-block bg-green-500 hover:bg-green-400 text-black font-bold px-6 py-3 rounded-full shadow-lg transition"
-      >
-        🚀 Join Presale
-      </a>
+      {/* JOIN THE PRESALE GÖRSELİ */}
+      <div className="flex justify-center">
+        <a href="/presale">
+          <img
+            src="/join-the-presale.png"
+            alt="Join the Presale"
+            className="w-32 h-32 hover:scale-105 transition-transform duration-300"
+          />
+        </a>
+      </div>
     </main>
   );
 }
