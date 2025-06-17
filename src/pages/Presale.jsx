@@ -1,5 +1,4 @@
 import React from "react";
-import XombixAnthem from "../components/XombixAnthem"; // YouTube gömme bileşeni
 
 export default function Presale() {
   return (
@@ -8,9 +7,6 @@ export default function Presale() {
         <h1 className="text-3xl font-bold text-orange-400 mb-6">
           Join the XombiX Presale
         </h1>
-
-        {/* 🎵 XombiX Anthem (YouTube embed) */}
-        <XombixAnthem />
 
         <p className="mb-4 text-gray-300">
           Only <span className="font-semibold text-white">500 participants</span> will be accepted.
