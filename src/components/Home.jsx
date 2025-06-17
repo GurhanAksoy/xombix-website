@@ -9,7 +9,6 @@ export default function Home() {
         console.error("Marş çalma hatası:", err);
       });
 
-      // İlk etkileşimden sonra listener'ı kaldır
       window.removeEventListener("click", handleInteraction);
     };
 
@@ -22,10 +21,15 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white text-center p-20">
-      <h1 className="text-4xl font-bold text-orange-400 mb-6">
-        Welcome to XombiX
+      <h1 className="text-5xl font-extrabold text-orange-400 mb-6">
+        Welcome to the XombiX Realm 🧠
       </h1>
-      <p className="text-xl">Bir tıkla evreni sarsarsın.</p>
+      <p className="text-lg text-gray-300 mb-4">
+        The ultimate meme coin that laughs at the system while eating it alive.
+      </p>
+      <p className="text-md text-green-400">
+        Scroll down. Or don't. Either way, you're already infected.
+      </p>
     </main>
   );
 }
