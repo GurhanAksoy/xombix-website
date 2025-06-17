@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌌 XombiX Uzay Arka Planı */
+/* 🌌 XombiX Arka Plan */
 html, body {
-  background-image: url("/space-bg.jpg");
+  background-image: url("/Space-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center;
   background-color: black;
-  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
