@@ -28,7 +28,11 @@ export default function Home() {
 
       {/* LOGO */}
       <div className="flex justify-center mb-6">
-        <img src="/xombix-logo.png" alt="XombiX Logo" className="w-48 h-48 rounded-xl shadow-lg" />
+        <img
+          src="/xombix-logo.png"
+          alt="XombiX Logo"
+          className="w-64 h-64 sm:w-72 sm:h-72 mx-auto drop-shadow-xl transition-all duration-300"
+        />
       </div>
 
       {/* BAŞLIK */}
@@ -48,12 +52,11 @@ export default function Home() {
       {/* JOIN THE PRESALE GÖRSELİ */}
       <div className="flex justify-center">
         <a href="/presale">
-         <img
-  src="/xombix-logo.png"
-  alt="XombiX Logo"
-  className="w-64 h-64 sm:w-72 sm:h-72 mx-auto mb-6 drop-shadow-xl transition-all duration-300"
-/>
-
+          <img
+            src="/join-the-presale.png"
+            alt="Join the Presale"
+            className="w-32 h-32 hover:scale-110 transition-transform duration-300"
+          />
         </a>
       </div>
     </main>
