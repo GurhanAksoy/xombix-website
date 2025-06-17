@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -28,13 +29,13 @@ export default function Home() {
 
       {/* JOIN THE PRESALE GÖRSELİ */}
       <div className="flex justify-center">
-        <a href="/presale">
+        <Link to="/presale">
           <img
             src="/join-the-presale.png"
             alt="Join the Presale"
             className="w-32 h-32 hover:scale-110 transition-transform duration-300"
           />
-        </a>
+        </Link>
       </div>
     </main>
   );
