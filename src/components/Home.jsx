@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* LOGO */}
       <div className="flex justify-center mb-6">
-        <img src="/xombix-logo.jpg" alt="XombiX Logo" className="w-48 h-48 rounded-xl shadow-lg" />
+        <img src="/xombix-logo.png" alt="XombiX Logo" className="w-48 h-48 rounded-xl shadow-lg" />
       </div>
 
       {/* BAŞLIK */}
