@@ -1,31 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 export default function Home() {
-  const audioRef = useRef(null);
-
-  useEffect(() => {
-    const playMarsh = () => {
-      if (audioRef.current) {
-        audioRef.current.volume = 1;
-        audioRef.current.play().catch((err) => {
-          console.error("Marş çalamadı:", err);
-        });
-        window.removeEventListener("click", playMarsh);
-      }
-    };
-
-    window.addEventListener("click", playMarsh);
-
-    return () => {
-      window.removeEventListener("click", playMarsh);
-    };
-  }, []);
-
   return (
     <main className="min-h-screen bg-black text-white text-center px-6 py-12 font-mono">
-      {/* MARŞ AUDIO */}
-      <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
-
       {/* LOGO */}
       <div className="flex justify-center mb-6">
         <img
