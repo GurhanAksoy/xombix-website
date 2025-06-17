@@ -3,9 +3,11 @@ import React from "react";
 export default function Whitepaper() {
   return (
     <main className="relative min-h-screen text-white px-6 py-12 max-w-5xl mx-auto font-mono leading-relaxed text-base overflow-hidden z-10">
-      <h1 className="text-3xl font-bold text-red-400 text-center mb-10">XombiX Whitepaper</h1>
+      <h1 className="text-3xl font-bold text-red-400 text-center mb-10">
+        XombiX Whitepaper
+      </h1>
 
-      {/* ... (tüm mevcut içerik burada aynı şekilde devam ediyor, sadece bg-black kaldırıldı) ... */}
+      {/* Buraya tüm içerikler geliyor - zaten elinde var */}
 
       {/* 📥 PDF Download Button */}
       <div className="text-center mt-12">

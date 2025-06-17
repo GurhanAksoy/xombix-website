@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen text-white text-center px-6 py-12 font-mono overflow-hidden">
+    <main className="relative min-h-screen text-white text-center px-6 py-12 font-mono overflow-hidden z-10">
       {/* LOGO */}
-      <div className="flex justify-center mb-6 z-10 relative">
+      <div className="flex justify-center mb-6 relative z-20">
         <img
           src="/xombix-logo.png"
           alt="XombiX Logo"
@@ -14,16 +14,16 @@ export default function Home() {
       </div>
 
       {/* BAŞLIK */}
-      <h1 className="text-4xl font-extrabold text-orange-400 mb-4 relative z-10">
+      <h1 className="text-4xl font-extrabold text-orange-400 mb-4 relative z-20">
         First stop: MARS
       </h1>
 
       {/* ALT METİN */}
-      <p className="text-lg text-gray-300 mb-6 relative z-10">
+      <p className="text-lg text-gray-300 mb-6 relative z-20">
         From ape to man. From coin to <span className="text-white font-bold">XombiX</span>
       </p>
 
-      <p className="italic text-sm text-gray-400 mb-10 relative z-10">
+      <p className="italic text-sm text-gray-400 mb-10 relative z-20">
         This is not just a coin. This is <span className="text-orange-300">XombiX</span>
       </p>
 
