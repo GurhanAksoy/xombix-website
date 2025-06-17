@@ -1,25 +1,24 @@
-// src/components/XombixAnthem.jsx
 import React from "react";
 
-function XombixAnthem() {
+export default function XombixAnthem() {
   const playAnthem = () => {
     const audio = new Audio("/xombix.mp3");
-    audio.play().catch((error) => {
-      console.error("Ses çalarken hata:", error);
+    audio.play().then(() => {
+      console.log("XombiX Anthem çalıyor!");
+    }).catch((err) => {
+      console.error("Çalma hatası:", err);
     });
   };
 
   return (
     <div className="text-center my-10">
-      <h3 className="text-xl font-semibold mb-2 text-white">🎵 XombiX Anthem</h3>
+      <h2 className="text-white text-lg font-bold mb-2">🎵 XombiX Anthem</h2>
       <button
         onClick={playAnthem}
-        className="px-6 py-3 bg-yellow-500 text-black font-bold rounded-full shadow-lg hover:scale-105 transition"
+        className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full shadow-lg transition-all duration-300"
       >
-        🔊 Play the Anthem
+        🔊 Play XombiX Anthem
       </button>
     </div>
   );
 }
-
-export default XombixAnthem;
