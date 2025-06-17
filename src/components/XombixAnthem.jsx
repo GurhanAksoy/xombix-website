@@ -4,11 +4,13 @@ export default function XombixAnthem() {
   const audioRef = useRef(null);
 
   const playAnthem = () => {
-    if (audioRef.current) {
-      audioRef.current.play().then(() => {
-        console.log("XombiX Anthem çalıyor!");
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = 1;
+      audio.play().then(() => {
+        console.log("Çalıyor");
       }).catch((err) => {
-        console.error("Çalma hatası:", err);
+        console.error("Ses çalma hatası:", err);
       });
     }
   };
@@ -17,8 +19,14 @@ export default function XombixAnthem() {
     <div className="text-center my-10">
       <h2 className="text-white text-lg font-bold mb-2">🎵 XombiX Anthem</h2>
 
-      {/* Ses çaları gizli ekledik */}
-      <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
+      {/* GÖRÜNÜR PLAYER */}
+      <audio
+        ref={audioRef}
+        src="/xombix.mp3"
+        controls
+        preload="auto"
+        style={{ margin: "auto", marginBottom: "1rem" }}
+      />
 
       <button
         onClick={playAnthem}
