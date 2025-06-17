@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌌 XombiX Yıldızlı Arka Plan Efekti */
+/* 🌌 XombiX Uzay Arka Planı */
 
 body {
-  background: black;
+  background-image: url('/Space-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
   margin: 0;
   overflow: hidden;
 }
+
+/* ✨ Hafif Hareketli Yıldız Efekti */
 
 .stars {
   width: 100%;
@@ -19,17 +26,5 @@ body {
   left: 0;
   z-index: 0;
   pointer-events: none;
-  background: radial-gradient(white 1px, transparent 1px), black;
-  background-size: 3px 3px;
-  animation: starMove 100s linear infinite;
-  opacity: 0.1;
-}
-
-@keyframes starMove {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-1000px);
-  }
-}
+  background: radial-gradient(white 1px, transparent 1px), transparent;
+  background-size: 3px 3px

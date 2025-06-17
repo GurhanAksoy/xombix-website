@@ -35,6 +35,7 @@ export default function App() {
       {/* 🌌 Yıldızlı Arka Plan */}
       <div className="stars"></div>
 
+      {/* 🔗 Navbar ve Sayfalar */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
