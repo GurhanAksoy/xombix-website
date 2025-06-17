@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌌 XombiX Uzay Teması - Gerçek görsel */
-
-body {
-  background-image: url('/Space-bg.png');
+/* 🌌 XombiX Uzay Arka Planı */
+html, body {
+  background-image: url("/space-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-color: black;
-  margin: 0;
-  font-family: 'monospace';
+  min-height: 100%;
 }
