@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-black text-white text-center px-6 py-12 font-mono overflow-hidden">
+    <main className="relative min-h-screen text-white text-center px-6 py-12 font-mono overflow-hidden">
       {/* LOGO */}
       <div className="flex justify-center mb-6 z-10 relative">
         <img

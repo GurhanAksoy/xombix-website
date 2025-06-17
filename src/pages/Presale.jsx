@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Presale() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-12 font-mono">
+    <main className="relative min-h-screen text-white px-6 py-12 font-mono overflow-hidden z-10">
       <section className="max-w-2xl mx-auto text-center">
         <h1 className="text-3xl font-bold text-orange-400 mb-6">
           Join the XombiX Presale
