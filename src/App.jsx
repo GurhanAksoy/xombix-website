@@ -32,6 +32,9 @@ export default function App() {
       {/* 🎵 XombiX Anthem - sayfa değişiminden etkilenmez */}
       <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
 
+      {/* 🌌 Yıldızlı Arka Plan */}
+      <div className="stars"></div>
+
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
