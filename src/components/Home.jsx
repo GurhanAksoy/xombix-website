@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <main className="relative min-h-screen text-white text-center px-6 py-12 font-mono overflow-hidden z-10">
-      {/* LOGO */}
+      {/* LOGO - BÜYÜTÜLDÜ */}
       <div className="flex justify-center mb-6 relative z-20">
         <img
           src="/xombix-logo.png"
           alt="XombiX Logo"
-          className="w-64 h-64 sm:w-72 sm:h-72 mx-auto drop-shadow-xl transition-all duration-300"
+          className="w-96 h-96 sm:w-[30rem] sm:h-[30rem] mx-auto drop-shadow-2xl transition-all duration-300"
         />
       </div>
 
       {/* BAŞLIK */}
-      <h1 className="text-4xl font-extrabold text-orange-400 mb-4 relative z-20">
+      <h1 className="text-5xl font-extrabold text-orange-400 mb-4 relative z-20">
         First stop: MARS
       </h1>
 
       {/* ALT METİN */}
-      <p className="text-lg text-gray-300 mb-6 relative z-20">
+      <p className="text-xl text-gray-300 mb-6 relative z-20">
         From ape to man. From coin to <span className="text-white font-bold">XombiX</span>
       </p>
 
