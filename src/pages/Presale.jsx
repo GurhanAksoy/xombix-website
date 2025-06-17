@@ -1,25 +1,16 @@
 import React from "react";
+import XombixAnthem from "../components/XombixAnthem"; // YouTube gömme bileşeni
 
 export default function Presale() {
-  const playAnthem = () => {
-    const audio = new Audio("/xombix.mp3");
-    audio.play().catch((err) => {
-      console.error("Marş çalarken hata oluştu:", err);
-    });
-  };
-
   return (
     <main className="min-h-screen bg-black text-white px-6 py-12 font-mono">
       <section className="max-w-2xl mx-auto text-center">
-        <h1 className="text-3xl font-bold text-orange-400 mb-6">Join the XombiX Presale</h1>
+        <h1 className="text-3xl font-bold text-orange-400 mb-6">
+          Join the XombiX Presale
+        </h1>
 
-        {/* 🎵 XombiX Anthem Butonu */}
-        <button
-          onClick={playAnthem}
-          className="mb-8 bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-6 rounded-full shadow-lg transition duration-300"
-        >
-          🔊 Play XombiX Anthem
-        </button>
+        {/* 🎵 XombiX Anthem (YouTube embed) */}
+        <XombixAnthem />
 
         <p className="mb-4 text-gray-300">
           Only <span className="font-semibold text-white">500 participants</span> will be accepted.
