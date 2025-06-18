@@ -6,7 +6,7 @@ export default function Home() {
     <main className="relative min-h-screen text-white text-center px-4 sm:px-6 py-10 font-sans overflow-hidden z-10 flex flex-col items-center justify-center">
 
       {/* LOGO */}
-      <div className="mb-4 relative z-20">
+      <div className="mb-1 relative z-20"> {/* Buradaki mb-4 → mb-1 olarak güncellendi */}
         <img
           src="/xombix-logo.png"
           alt="XombiX Logo"
