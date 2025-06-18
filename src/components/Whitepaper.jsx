@@ -34,8 +34,6 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      <!-- (diğer içerikler aynı şekilde devam eder...) -->
-
     </main>
   );
 }
