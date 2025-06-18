@@ -6,7 +6,7 @@ export default function Home() {
     <main className="relative min-h-screen text-white text-center px-4 sm:px-6 py-10 font-sans overflow-hidden z-10 flex flex-col items-center justify-center">
 
       {/* LOGO */}
-      <div className="mb-1 relative z-20"> {/* Buradaki mb-4 → mb-1 olarak güncellendi */}
+      <div className="mb-0 relative z-20"> {/* Daha da küçültüldü */}
         <img
           src="/xombix-logo.png"
           alt="XombiX Logo"
@@ -15,7 +15,7 @@ export default function Home() {
       </div>
 
       {/* BAŞLIK */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mb-3 relative z-20">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-[-1.5rem] mb-3 relative z-20">
         First stop: MARS
       </h1>
 
