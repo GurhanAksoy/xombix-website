@@ -8,7 +8,7 @@ export default function Home() {
       {/* LOGO */}
       <div className="mb-0 relative z-20"> {/* Daha da küçültüldü */}
         <img
-          src="/xombix-logo.png"
+          src="/xombix-logo.webp" width="320" height="320"
           alt="XombiX Logo"
           className="w-64 h-64 sm:w-[20rem] sm:h-[20rem] mx-auto drop-shadow-2xl transition-all duration-300"
         />
