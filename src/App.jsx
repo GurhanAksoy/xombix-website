@@ -18,8 +18,7 @@ function ScrollToTop() {
 }
 
 export default function App() {
-  const audioRef = useRef(null);
-
+  
   useEffect(() => {
     const playMarsh = () => {
       if (audioRef.current) {
