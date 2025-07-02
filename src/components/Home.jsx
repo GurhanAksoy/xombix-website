@@ -33,7 +33,7 @@ export default function Home() {
       <div className="relative z-20">
         <Link to="/presale">
           <img
-            src="/join-the-presale.png"
+            src="/join-the-presale.webp" alt="Join the Presale" width="200" height="200" loading="lazy"
             alt="Join the Presale"
             className="w-32 h-32 hover:scale-110 transition-transform duration-300 cursor-pointer"
           />
