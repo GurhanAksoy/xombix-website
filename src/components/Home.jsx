@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen text-white text-center px-4 sm:px-6 py-10 font-sans overflow-hidden z-10 flex flex-col items-center justify-center">
+    <main className="relative min-h-screen bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 py-10 font-sans overflow-hidden z-10 flex flex-col items-center justify-center">
 
       {/* LOGO */}
       <div className="mb-0 relative z-20"> {/* Daha da küçültüldü */}
