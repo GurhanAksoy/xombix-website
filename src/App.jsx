@@ -43,7 +43,7 @@ export default function App() {
       <ScrollToTop />
 
       {/* 🎵 XombiX Anthem - sayfa değişiminden etkilenmez */}
-      <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
+      <audio ref={audioRef} src="/xombix.mp3" preload="none" aria-hidden="true" />
 
       {/*  Arka plan yıldız efekti */}
       <div className="stars"></div>
