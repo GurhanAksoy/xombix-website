@@ -8,7 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url("/Space-bg.png");
+  background-image: url("/background-stars.webp"); /* DÜZELTİLDİ */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
