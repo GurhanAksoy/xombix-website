@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://xombix.com/" />
     <meta name="theme-color" content="#000000" />
 
-    <!-- Favicon (düzenlenmiş) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- Alternate Languages -->
@@ -51,36 +51,12 @@
       ]
     }
     </script>
-
-    <!-- Font / Script preload örneği (boş bırakılmıştır) -->
-    <!-- <link rel="preload" href="/fonts/font.woff2" as="font" type="font/woff2" crossorigin /> -->
   </head>
   <body>
-    <!-- SEO dostu görünür H1 -->
-    <header>
-      <h1>XombiX Coin — Web3 Meme Token Revolution</h1>
-    </header>
+    <!-- React renders here -->
+    <div id="root"></div>
 
-    <!-- Ana içerik -->
-    <main>
-      <img src="/images/xombix-banner.png" alt="XombiX Banner" width="1200" height="600" loading="lazy" />
-      <!-- Ses dosyası preload optimizasyonu -->
-      <audio id="xombix-audio" preload="none" controls style="display:none;">
-        <source src="/audio/xombix.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-    </main>
-
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      // Kullanıcı ilk etkileşimde sesi otomatik başlat (izin verilirse)
-      window.addEventListener('click', () => {{
-        const audio = document.getElementById('xombix-audio');
-        if (audio && audio.paused) {{
-          audio.play().catch(() => {{ /* sessiz hataları bastır */ }});
-        }}
-      }}, {{ once: true }});
-    </script>
   </body>
 </html>
