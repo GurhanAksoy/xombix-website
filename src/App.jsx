@@ -1,17 +1,12 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import Whitepaper from "./Whitepaper";
-import XombixAnthem from "./XombixAnthem";
+import React from 'react';
+import Navbar from './Navbar.jsx'; // Dosya adı ve uzantısı hassas
+import Home from './Home.jsx';
 
 function App() {
   return (
     <div>
-      <audio src="/xombix.mp3" autoPlay loop muted style={{ display: "none" }}></audio>
       <Navbar />
       <Home />
-      <Whitepaper />
-      <XombixAnthem />
     </div>
   );
 }
