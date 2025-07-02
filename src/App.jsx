@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
@@ -39,16 +40,22 @@ export default function App() {
 
   return (
     <Router>
-      {/* Scroll to Top on Route Change */}
+      {/* Sayfa değişiminde yukarı kaydır */}
       <ScrollToTop />
 
-      {/* 🎵 XombiX Anthem - sayfa değişiminden etkilenmez */}
-      <audio ref={audioRef} src="/xombix.mp3" preload="auto" />
+      {/* 🎵 XombiX Anthem - performans için preload kaldırıldı */}
+      <audio
+        ref={audioRef}
+        src="/xombix.mp3"
+        preload="none"
+        style={{ display: "none" }}
+        aria-label="XombiX Anthem"
+      />
 
-      {/*  Arka plan yıldız efekti */}
-      <div className="stars"></div>
+      {/* Arka plan yıldız efekti */}
+      <div className="stars" role="presentation" />
 
-      {/* 🔗 Navbar ve Sayfalar */}
+      {/* Navigasyon ve Sayfa Yönlendirme */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
