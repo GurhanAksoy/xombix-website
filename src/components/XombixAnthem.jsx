@@ -7,13 +7,15 @@ export default function XombixAnthem() {
       
       <div className="max-w-xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
         <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/811uaGAIX8o"
-          title="XombiX Anthem"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+  className="w-full h-full"
+  loading="lazy"
+  src="https://www.youtube-nocookie.com/embed/811uaGAIX8o"
+  title="XombiX Anthem"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
       </div>
     </div>
   );
