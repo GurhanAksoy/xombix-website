@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-24 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
+    <main className="relative h-screen bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-8 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
 
       {/* LOGO */}
       <div className="mb-0 relative z-20">
