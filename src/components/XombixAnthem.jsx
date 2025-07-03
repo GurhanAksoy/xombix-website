@@ -26,7 +26,7 @@ export default function XombixAnthem() {
       <audio
         ref={audioRef}
         preload="auto"
-        src="https://www.youtube.com/embed/811uaGAIX8o"
+        src="/xombix.mp3"
         style={{ display: "none" }}
       />
     </>
