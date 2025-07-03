@@ -8,17 +8,17 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url("/background-stars.webp"); /* DÜZELTİLDİ */
+  background-image: url("/background-stars.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  z-index: -1;
+  /* ❌ z-index kaldırıldı çünkü root elementte scroll sorununa yol açıyordu */
 }
 
-/* ✨ Yıldız Efekti */
+/* ✨ Yıldız Efekti - arka plan yıldız animasyonu */
 .stars {
   position: fixed;
   top: 0;
@@ -30,9 +30,10 @@ html, body {
   animation: starMove 100s linear infinite;
   opacity: 0.03;
   pointer-events: none;
-  z-index: 0; /* arkada kalsın ama tamamen silinmesin */
+  z-index: 0; /* arka planda kalır ama DOM'dan silinmez */
 }
 
+/* ⭐ Yıldızların hareketi */
 @keyframes starMove {
   from {
     transform: translateY(0);
