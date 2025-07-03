@@ -1,41 +1,53 @@
-<main className="relative h-screen bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-4 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
+import React from "react";
+import { Link } from "react-router-dom";
+import XombixAnthem from "./XombixAnthem";
 
-  {/* LOGO */}
-  <div className="mb-0 relative z-20">
-    <img
-      src="/xombix-logo.webp" width="320" height="320"
-      alt="XombiX Logo"
-      className="w-52 h-52 sm:w-[16rem] sm:h-[16rem] mx-auto drop-shadow-2xl transition-all duration-300"
-    />
-  </div>
+export default function Home() {
+  return (
+    <main className="relative h-screen bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-4 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
 
-  {/* BAŞLIK */}
-  <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-[-1rem] mb-2 relative z-20">
-    First stop: MARS
-  </h1>
+      {/* LOGO */}
+      <div className="mb-0 relative z-20">
+        <img
+          src="/xombix-logo.webp" width="320" height="320"
+          alt="XombiX Logo"
+          className="w-52 h-52 sm:w-[16rem] sm:h-[16rem] mx-auto drop-shadow-2xl transition-all duration-300"
+        />
+      </div>
 
-  {/* ALT METİN */}
-  <p className="text-base md:text-lg text-gray-200 mb-1 relative z-20">
-    <span className="text-white font-bold">XombiX: </span> While others die, we multiply!
-  </p>
+      {/* BAŞLIK */}
+      <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-[-1rem] mb-2 relative z-20">
+        First stop: MARS
+      </h1>
 
-  <p className="italic text-base text-gray-400 mb-3 relative z-20">
-    This is not just a coin. This is <span className="text-orange-300 font-semibold">XombiX</span>
-  </p>
+      {/* ALT METİN */}
+      <p className="text-base md:text-lg text-gray-200 mb-1 relative z-20">
+        <span className="text-white font-bold">XombiX: </span> While others die, we multiply!
+      </p>
 
-  {/* JOIN THE PRESALE */}
-  <div className="relative z-20 mb-1">
-    <Link to="/presale">
-      <img
-        src="/join-the-presale.webp" alt="Join the Presale" width="200" height="200" loading="lazy"
-        className="w-28 h-28 hover:scale-110 transition-transform duration-300 cursor-pointer"
-      />
-    </Link>
-  </div>
+      <p className="italic text-base text-gray-400 mb-3 relative z-20">
+        This is not just a coin. This is <span className="text-orange-300 font-semibold">XombiX</span>
+      </p>
 
-  {/* ANTHEM - eğer çok yer kaplıyorsa sınırlayalım */}
-  <div className="max-h-20 overflow-hidden">
-    <XombixAnthem />
-  </div>
+      {/* JOIN THE PRESALE */}
+      <div className="relative z-20 mb-1">
+        <Link to="/presale">
+          <img
+            src="/join-the-presale.webp"
+            alt="Join the Presale"
+            width="200"
+            height="200"
+            loading="lazy"
+            className="w-28 h-28 hover:scale-110 transition-transform duration-300 cursor-pointer"
+          />
+        </Link>
+      </div>
 
-</main>
+      {/* ANTHEM */}
+      <div className="max-h-20 overflow-hidden">
+        <XombixAnthem />
+      </div>
+
+    </main>
+  );
+}
