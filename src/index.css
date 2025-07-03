@@ -2,23 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌌 XombiX Uzay Arka Planı */
+/* 🌌 Temel Ayarlar */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url("/background-stars.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  /* ❌ z-index kaldırıldı çünkü root elementte scroll sorununa yol açıyordu */
 }
 
-/* ✨ Yıldız Efekti - arka plan yıldız animasyonu */
+/* ✨ Yıldız Efekti - sabit animasyon */
 .stars {
   position: fixed;
   top: 0;
@@ -30,10 +24,10 @@ html, body {
   animation: starMove 100s linear infinite;
   opacity: 0.03;
   pointer-events: none;
-  z-index: 0; /* arka planda kalır ama DOM'dan silinmez */
+  z-index: 0;
 }
 
-/* ⭐ Yıldızların hareketi */
+/* ⭐ Yıldızların yukarı doğru kayması */
 @keyframes starMove {
   from {
     transform: translateY(0);
