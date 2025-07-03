@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* ALT METİN */}
       <p className="text-base md:text-lg text-gray-200 mb-2 relative z-20">
-        From ape to man. From coin to <span className="text-white font-bold">XombiX</span>
+        While others die, we multiply!:  <span className="text-white font-bold">XombiX</span>
       </p>
 
       <p className="italic text-base text-gray-400 mb-8 relative z-20">
