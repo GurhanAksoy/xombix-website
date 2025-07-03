@@ -1,22 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import XombixAnthem from "./XombixAnthem";
+// import XombixAnthem from "./XombixAnthem"; // Şimdilik kapalı
 
 export default function Home() {
   return (
-    <main className="relative h-screen bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-4 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
+    <main className="relative min-h-[calc(100vh-64px)] bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-4 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
 
       {/* LOGO */}
       <div className="mb-0 relative z-20">
         <img
-          src="/xombix-logo.webp" width="320" height="320"
+          src="/xombix-logo.webp"
+          width="320"
+          height="320"
           alt="XombiX Logo"
           className="w-52 h-52 sm:w-[16rem] sm:h-[16rem] mx-auto drop-shadow-2xl transition-all duration-300"
         />
       </div>
 
       {/* BAŞLIK */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-[-1rem] mb-2 relative z-20">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20">
         First stop: MARS
       </h1>
 
@@ -43,11 +45,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* ANTHEM */}
-      <div className="max-h-20 overflow-hidden">
-        <XombixAnthem />
-      </div>
-
+      {/* <XombixAnthem /> */}
     </main>
   );
 }
