@@ -50,7 +50,7 @@ export default function Home() {
             width="200"
             height="200"
             loading="lazy"
-            className="w-36 h-36 hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulse-glow"
+            className="w-36 h-36 hover:scale-110 transition-transform duration-300 cursor-pointer glow-pulse"
           />
         </Link>
       </div>
