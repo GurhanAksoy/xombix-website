@@ -18,17 +18,27 @@ export default function Home() {
       </div>
 
       {/* BAŞLIK */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20">
+      <h1
+        className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20"
+        style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}
+      >
         First stop: MARS
       </h1>
 
       {/* ALT METİN */}
-      <p className="text-base md:text-lg text-gray-200 mb-1 relative z-20">
+      <p
+        className="text-base md:text-lg text-gray-200 mb-1 relative z-20"
+        style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
+      >
         <span className="text-white font-bold">XombiX: </span> While others die, we multiply!
       </p>
 
-      <p className="italic text-base text-gray-400 mb-3 relative z-20">
-        This is not just a coin. This is <span className="text-orange-300 font-semibold">XombiX</span>
+      <p
+        className="italic text-base text-gray-400 mb-3 relative z-20"
+        style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
+      >
+        This is not just a coin. This is{" "}
+        <span className="text-orange-300 font-semibold">XombiX</span>
       </p>
 
       {/* JOIN THE PRESALE */}
