@@ -43,22 +43,16 @@ export default function Home() {
 
       {/* JOIN THE PRESALE */}
       <div className="relative z-20 mb-1 animate-fade-in">
-        <div className="relative w-40 h-40">
-          {/* Glow effect background */}
-          <div className="absolute inset-0 rounded-full bg-orange-500 blur-xl opacity-50 animate-pulse"></div>
-
-          {/* Actual image */}
-          <Link to="/presale">
-            <img
-              src="/join-the-presale.webp"
-              alt="Join the Presale"
-              width="200"
-              height="200"
-              loading="lazy"
-              className="relative z-10 w-full h-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer"
-            />
-          </Link>
-        </div>
+        <Link to="/presale">
+          <img
+            src="/join-the-presale.webp"
+            alt="Join the Presale"
+            width="200"
+            height="200"
+            loading="lazy"
+            className="w-36 h-36 cursor-pointer hover:scale-110 transition-transform duration-300 glow-pulse"
+          />
+        </Link>
       </div>
 
       {/* <XombixAnthem /> */}
