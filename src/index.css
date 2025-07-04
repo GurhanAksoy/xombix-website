@@ -10,6 +10,7 @@ html, body {
   background-color: black;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  overflow-y: auto; /* ✨ Eklendi */
 }
 
 /* ✨ Yıldız Efekti - sabit animasyon */
