@@ -7,13 +7,13 @@ export default function Home() {
     <main className="relative min-h-[calc(100vh-64px)] bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-4 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
 
       {/* LOGO */}
-      <div className="mb-0 relative z-20">
+      <div className="mt-2 mb-0 sm:mt-4 relative z-20">
         <img
           src="/xombix-logo.webp"
           width="320"
           height="320"
           alt="XombiX Logo"
-          className="w-52 h-52 sm:w-[16rem] sm:h-[16rem] mx-auto drop-shadow-2xl transition-all duration-300"
+          className="w-64 h-64 sm:w-[20rem] sm:h-[20rem] mx-auto drop-shadow-2xl transition-all duration-300"
         />
       </div>
 
