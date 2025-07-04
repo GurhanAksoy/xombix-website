@@ -39,10 +39,8 @@ export default function App() {
 
   return (
     <Router>
-      {/* Scroll to Top on Route Change */}
       <ScrollToTop />
 
-      {/* 🎵 XombiX Anthem - sayfa değişiminden etkilenmez */}
       <audio
         ref={audioRef}
         src="/xombix.mp3"
@@ -51,16 +49,16 @@ export default function App() {
         style={{ display: "none" }}
       ></audio>
 
-      {/*  Arka plan yıldız efekti */}
       <div className="stars"></div>
 
-      {/* 🔗 Navbar ve Sayfalar */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/whitepaper" element={<Whitepaper />} />
-        <Route path="/presale" element={<Presale />} />
-      </Routes>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/whitepaper" element={<Whitepaper />} />
+          <Route path="/presale" element={<Presale />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
