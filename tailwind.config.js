@@ -1,5 +1,6 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  safelist: ['glow-pulse'],
   theme: {
     extend: {
       fontFamily: {

@@ -57,3 +57,18 @@ main {
 .overflow-x-auto {
   -webkit-overflow-scrolling: touch;
 }
+
+
+/* 🔥 Parlayan Jeton Efekti */
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(255, 115, 0, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 115, 0, 1));
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
