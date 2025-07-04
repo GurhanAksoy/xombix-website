@@ -1,20 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌌 XombiX Uzay Arka Planı */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: black;
+  background-image: url("/Space-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: 'Inter', sans-serif;
-  overflow-x: hidden;   /* YATAY taşmayı engeller */
-  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: -1;
 }
 
-/* ⭐ Tüm öğelere kutu modeli kontrolü */
-* {
-  box-sizing: border-box;
+/* ✨ Yıldız Efekti */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(white 1px, transparent 1px);
+  background-size: 3px 3px;
+  animation: starMove 100s linear infinite;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0; /* arkada kalsın ama tamamen silinmesin */
 }
 
-/* Responsive iyileştirmeler */
-img {
-  max-width: 100%;
-  height: auto;
+@keyframes starMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
 }
