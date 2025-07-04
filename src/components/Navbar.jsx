@@ -22,6 +22,9 @@ export default function Navbar() {
       <Link to="/presale" className={navItemClass("/presale")}>
         Join Presale
       </Link>
+      <Link to="/contact" className={navItemClass("/contact")}>
+        Contact
+      </Link>
       <a
         href="https://t.me/XombiXNetwork"
         target="_blank"
