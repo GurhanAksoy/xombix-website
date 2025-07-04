@@ -41,3 +41,19 @@ html, body {
     transform: translateY(-1000px);
   }
 }
+/* ✅ Mobil taşma problemini engelleyen koruma */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+main {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+}
