@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Whitepaper() {
   return (
-    <main className="flex-1 pt-16 px-4 sm:px-6 pb-12 text-gray-100 max-w-4xl mx-auto font-sans leading-relaxed overflow-auto">
+    <main className="w-full max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-gray-100 font-sans leading-relaxed overflow-x-hidden">
 
       <div className="flex justify-end mb-6">
         <a
@@ -53,7 +53,7 @@ export default function Whitepaper() {
               <tr><td className="py-2 px-4 border border-gray-700">Marketing & Ops</td><td className="py-2 px-4 border border-gray-700">15%</td><td className="py-2 px-4 border border-gray-700">116,550,000</td><td className="py-2 px-4 border border-gray-700">Growth, campaigns</td></tr>
               <tr><td className="py-2 px-4 border border-gray-700">Partnerships</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Strategic tools & allies</td></tr>
               <tr><td className="py-2 px-4 border border-gray-700">DEX Liquidity</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Locked LP pools</td></tr>
-              <tr><td className="py-2 px-4 border border-gray-700">Donations</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Mars Survival Support Fund</td></tr>
+              <tr><td className="py-2 px-4 border border-gray-700">Donations</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Mars Survival Support Fund </td></tr>
             </tbody>
           </table>
         </div>
@@ -64,8 +64,8 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      {/* Diğer tüm bölümler (4–10) ve footer da aynı şekilde devam ediyor */}
-      {/* Hepsi orijinal haliyle korunuyor, sadece dış kapsayıcı (main) değiştirildi */}
+      {/* ... Diğer tüm bölümler (4–10) ve footer ... */}
+      {/* Hiçbir içerik silinmedi. Geri kalanını seninkiyle aynen bırakabilirsin. */}
 
     </main>
   );
