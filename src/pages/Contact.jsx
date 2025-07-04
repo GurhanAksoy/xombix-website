@@ -1,76 +1,61 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+  const [state, handleSubmit] = useForm("your-form-id"); // buraya formspree ID gelecek
+
+  if (state.succeeded) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen text-center px-4 py-8">
+        <h2 className="text-2xl font-bold text-green-400 mb-4">{t("contact.successTitle")}</h2>
+        <p className="text-gray-200">{t("contact.successMessage")}</p>
+      </div>
+    );
+  }
+
   return (
-    <main className="min-h-screen bg-black text-gray-100 px-4 sm:px-6 py-12 font-sans flex items-center justify-center">
-      <div className="w-full max-w-2xl bg-gray-900 bg-opacity-80 p-8 rounded-2xl shadow-xl backdrop-blur">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-orange-400 text-center mb-8">
-          Contact XombiX Team
-        </h1>
+    <main className="flex flex-col items-center justify-center min-h-screen px-4 py-12 text-white">
+      <div className="w-full max-w-xl bg-black bg-opacity-50 p-8 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-extrabold text-orange-400 mb-6 text-center">{t("contact.title")}</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name" className="block text-sm font-semibold mb-2">{t("contact.name")}</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            className="w-full p-2 mb-4 rounded-md bg-gray-800 text-white"
+          />
 
-        <form
-          action="https://formsubmit.co/xombixcoin@gmail.com"
-          method="POST"
-          className="space-y-6"
-        >
-          {/* GİZLİ GÖNDERİM AYARLARI */}
-          <input type="hidden" name="_next" value="https://xombix.com/thanks" />
-          <input type="hidden" name="_captcha" value="false" />
+          <label htmlFor="email" className="block text-sm font-semibold mb-2">{t("contact.email")}</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            className="w-full p-2 mb-4 rounded-md bg-gray-800 text-white"
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-          {/* AD */}
-          <div>
-            <label htmlFor="name" className="block mb-1 text-sm font-semibold text-orange-300">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              className="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Your name"
-            />
-          </div>
+          <label htmlFor="message" className="block text-sm font-semibold mb-2">{t("contact.message")}</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="4"
+            className="w-full p-2 mb-4 rounded-md bg-gray-800 text-white"
+          ></textarea>
+          <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-          {/* E-POSTA */}
-          <div>
-            <label htmlFor="email" className="block mb-1 text-sm font-semibold text-orange-300">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              className="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="your@email.com"
-            />
-          </div>
-
-          {/* MESAJ */}
-          <div>
-            <label htmlFor="message" className="block mb-1 text-sm font-semibold text-orange-300">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              className="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Type your message..."
-            ></textarea>
-          </div>
-
-          {/* GÖNDER BUTONU */}
-          <div className="text-center">
-            <button
-              type="submit"
-              className="bg-orange-400 hover:bg-orange-500 text-black font-semibold py-2 px-8 rounded-full shadow-md transition duration-300"
-            >
-              Send Message
-            </button>
-          </div>
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="w-full py-2 px-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-md transition duration-300"
+          >
+            {t("contact.submit")}
+          </button>
         </form>
       </div>
     </main>
