@@ -1,6 +1,10 @@
-t('contact_title')
-t('form_name')
-t('form_email')
-t('form_message')
-t('form_submit')
-t('form_required')
+ {
+  "contact_title": "Contact Us",
+  "form_name": "Name",
+  "form_email": "Email",
+  "form_message": "Message",
+  "form_submit": "Send Message",
+  "form_required": "This field is required"
+}
+
+
