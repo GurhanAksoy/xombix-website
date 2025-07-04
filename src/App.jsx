@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Whitepaper from "./components/Whitepaper";
 import Presale from "./pages/Presale";
+import Contact from "./pages/Contact"; // ✅ Contact sayfası eklendi
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/whitepaper" element={<Whitepaper />} />
           <Route path="/presale" element={<Presale />} />
+          <Route path="/contact" element={<Contact />} /> {/* ✅ Contact rotası */}
         </Routes>
       </div>
     </Router>
