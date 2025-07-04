@@ -7,7 +7,7 @@ export default function Home() {
     <main className="relative min-h-[calc(100vh-64px)] bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-2 sm:pt-4 pb-4 sm:pb-6 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
 
       {/* LOGO */}
-      <div className="mt-2 mb-0 sm:mt-4 relative z-20">
+      <div className="mt-2 mb-0 sm:mt-4 relative z-20 animate-fade-in">
         <img
           src="/xombix-logo.webp"
           width="320"
@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* BAŞLIK */}
       <h1
-        className="font-orbitron text-5xl md:text-6xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20"
+        className="font-orbitron text-5xl md:text-6xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20 animate-fade-in"
         style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}
       >
         First stop: MARS
@@ -27,14 +27,14 @@ export default function Home() {
 
       {/* ALT METİN */}
       <p
-        className="font-orbitron text-lg md:text-xl text-gray-200 mb-1 relative z-20"
+        className="font-orbitron text-lg md:text-xl text-gray-200 mb-1 relative z-20 animate-fade-in"
         style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
       >
         <span className="text-white font-bold">XombiX: </span> While others die, we multiply!
       </p>
 
       <p
-        className="italic text-base md:text-lg text-gray-400 mb-3 relative z-20"
+        className="italic text-base md:text-lg text-gray-400 mb-3 relative z-20 animate-fade-in"
         style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
       >
         This is not just a coin. This is{" "}
@@ -42,7 +42,7 @@ export default function Home() {
       </p>
 
       {/* JOIN THE PRESALE */}
-      <div className="relative z-20 mb-1">
+      <div className="relative z-20 mb-1 animate-fade-in">
         <Link to="/presale">
           <img
             src="/join-the-presale.webp"
@@ -50,7 +50,7 @@ export default function Home() {
             width="200"
             height="200"
             loading="lazy"
-            className="w-36 h-36 hover:scale-110 transition-transform duration-300 cursor-pointer"
+            className="w-36 h-36 hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulse-glow"
           />
         </Link>
       </div>
