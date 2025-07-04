@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* BAŞLIK */}
       <h1
-        className="text-5xl md:text-6xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20"
+        className="font-orbitron text-5xl md:text-6xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20"
         style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}
       >
         First stop: MARS
@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* ALT METİN */}
       <p
-        className="text-lg md:text-xl text-gray-200 mb-1 relative z-20"
+        className="font-orbitron text-lg md:text-xl text-gray-200 mb-1 relative z-20"
         style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
       >
         <span className="text-white font-bold">XombiX: </span> While others die, we multiply!
