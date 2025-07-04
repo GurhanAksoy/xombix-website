@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="relative min-h-[calc(100vh-64px)] bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-4 pb-2 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
+    <main className="relative min-h-[calc(100vh-64px)] bg-[url('/background-stars.webp')] bg-cover bg-no-repeat bg-center text-white text-center px-4 sm:px-6 pt-2 sm:pt-4 pb-4 sm:pb-6 font-sans overflow-hidden z-10 flex flex-col items-center justify-start">
 
       {/* LOGO */}
       <div className="mt-2 mb-0 sm:mt-4 relative z-20">
@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* BAŞLIK */}
       <h1
-        className="text-4xl md:text-5xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20"
+        className="text-5xl md:text-6xl font-extrabold text-orange-400 mt-2 mb-2 relative z-20"
         style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}
       >
         First stop: MARS
@@ -27,14 +27,14 @@ export default function Home() {
 
       {/* ALT METİN */}
       <p
-        className="text-base md:text-lg text-gray-200 mb-1 relative z-20"
+        className="text-lg md:text-xl text-gray-200 mb-1 relative z-20"
         style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
       >
         <span className="text-white font-bold">XombiX: </span> While others die, we multiply!
       </p>
 
       <p
-        className="italic text-base text-gray-400 mb-3 relative z-20"
+        className="italic text-base md:text-lg text-gray-400 mb-3 relative z-20"
         style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.6)" }}
       >
         This is not just a coin. This is{" "}
@@ -50,7 +50,7 @@ export default function Home() {
             width="200"
             height="200"
             loading="lazy"
-            className="w-28 h-28 hover:scale-110 transition-transform duration-300 cursor-pointer"
+            className="w-36 h-36 hover:scale-110 transition-transform duration-300 cursor-pointer"
           />
         </Link>
       </div>
