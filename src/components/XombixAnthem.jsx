@@ -6,7 +6,7 @@ export default function XombixAnthem() {
   useEffect(() => {
     const playAnthem = () => {
       if (audioRef.current) {
-        audioRef.current.volume = 0.25; // Başlangıç sesi %25 (artık rahatsız etmiyor)
+        audioRef.current.volume = 0.15; // Başlangıç sesi %15 (artık rahatsız etmiyor)
         audioRef.current
           .play()
           .catch((err) => console.warn("Autoplay engellendi:", err));
