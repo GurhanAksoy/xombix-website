@@ -53,6 +53,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
 
+      {/* Müzik */}
       <audio
         ref={audioRef}
         src="/xombix.mp3"
@@ -61,17 +62,19 @@ export default function App() {
         style={{ display: "none" }}
       ></audio>
 
-      {/* Hoparlör Kontrol Düğmesi */}
+      {/* Hoparlör kontrol düğmesi - SAĞ ÜST KÖŞE */}
       <button
         onClick={toggleMute}
-        className="fixed bottom-6 right-6 z-50 p-3 bg-black/60 hover:bg-black/80 text-white rounded-full shadow-lg transition duration-300"
+        className="fixed top-6 right-6 z-50 p-3 bg-black/60 hover:bg-black/80 text-white rounded-full shadow-lg transition duration-300"
         aria-label="Toggle Music"
       >
         {isMuted ? <FaVolumeMute size={20} /> : <FaVolumeUp size={20} />}
       </button>
 
+      {/* Arkaplan */}
       <div className="stars"></div>
 
+      {/* Sayfa Yapısı */}
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <Routes>
