@@ -29,14 +29,14 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center p-6">
-      <div className="max-w-xl w-full">
-        <h2 className="text-3xl font-bold text-center mb-6">
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex items-center justify-center px-4 py-12">
+      <div className="w-full max-w-2xl bg-black bg-opacity-60 p-8 rounded-xl shadow-2xl border border-orange-500">
+        <h2 className="text-4xl font-bold text-center mb-6 text-orange-400 drop-shadow-md">
           {t("contact_title")}
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label htmlFor="name" className="block mb-1">
+            <label htmlFor="name" className="block mb-2 text-sm font-medium text-orange-300">
               {t("form_name")}
             </label>
             <input
@@ -44,12 +44,12 @@ export default function Contact() {
               type="text"
               name="name"
               required
-              className="w-full px-4 py-2 text-black rounded"
+              className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder={t("form_name")}
             />
           </div>
           <div>
-            <label htmlFor="email" className="block mb-1">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-orange-300">
               {t("form_email")}
             </label>
             <input
@@ -57,37 +57,37 @@ export default function Contact() {
               type="email"
               name="email"
               required
-              className="w-full px-4 py-2 text-black rounded"
+              className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder={t("form_email")}
             />
           </div>
           <div>
-            <label htmlFor="message" className="block mb-1">
+            <label htmlFor="message" className="block mb-2 text-sm font-medium text-orange-300">
               {t("form_message")}
             </label>
             <textarea
               id="message"
               name="message"
               required
-              className="w-full px-4 py-2 text-black rounded"
+              rows="5"
+              className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder={t("form_message")}
-              rows="4"
             ></textarea>
           </div>
           <button
             type="submit"
             disabled={status === "sending"}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded"
+            className="w-full py-3 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg transition-all duration-200"
           >
             {status === "sending" ? "Sending..." : t("form_submit")}
           </button>
           {status === "success" && (
-            <p className="text-green-400 text-center mt-2">
+            <p className="text-green-400 text-center mt-4 font-medium">
               Message sent successfully!
             </p>
           )}
           {status === "error" && (
-            <p className="text-red-400 text-center mt-2">
+            <p className="text-red-400 text-center mt-4 font-medium">
               Something went wrong. Please try again.
             </p>
           )}
