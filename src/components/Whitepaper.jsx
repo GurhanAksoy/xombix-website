@@ -148,7 +148,8 @@ export default function Whitepaper() {
           This is not just a token. It's a torch.<br />
           We carry memes instead of weapons.<br />
           We build laughter into the blockchain.<br />
-          We simply say: XombiX
+
+          We simply say: 
         </p>
         <p className="text-orange-300 font-extrabold text-xl mb-4">XombiX</p>
         <p className="text-sm text-gray-400">
