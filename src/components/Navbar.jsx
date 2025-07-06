@@ -17,8 +17,6 @@ export default function Navbar() {
     <nav className="bg-black bg-opacity-90 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-
           {/* Desktop Links */}
           <div className="hidden md:flex flex-1 justify-center space-x-6 items-center">
             <Link to="/" className={linkClass("/")}>Home</Link>
@@ -28,7 +26,7 @@ export default function Navbar() {
             <Link to="/contact" className={linkClass("/contact", "font-semibold hover:text-green-300")}>Contact</Link>
           </div>
 
-          {/* Hamburger */}
+          {/* Hamburger Button */}
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-white focus:outline-none">
               {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -39,12 +37,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black bg-opacity-95 px-6 py-4 space-y-4 text-center">
-          <Link to="/" onClick={closeMenu} className={linkClass("/")}>Home</Link>
-          <Link to="/whitepaper" onClick={closeMenu} className={linkClass("/whitepaper")}>Whitepaper</Link>
-          <Link to="/presale" onClick={closeMenu} className={linkClass("/presale")}>Join Presale</Link>
-          <a href="https://t.me/XombiXNetwork" onClick={closeMenu} target="_blank" rel="noopener noreferrer" className="block text-white font-semibold hover:text-blue-400">Join Telegram</a>
-          <Link to="/contact" onClick={closeMenu} className={linkClass("/contact", "font-semibold hover:text-green-300")}>Contact</Link>
+        <div className="md:hidden bg-black bg-opacity-95 px-6 py-6 rounded-b-xl shadow-lg">
+          <ul className="flex flex-col items-center space-y-4 text-white text-lg font-semibold">
+            <li><Link to="/" onClick={closeMenu} className={linkClass("/")}>Home</Link></li>
+            <li><Link to="/whitepaper" onClick={closeMenu} className={linkClass("/whitepaper")}>Whitepaper</Link></li>
+            <li><Link to="/presale" onClick={closeMenu} className={linkClass("/presale")}>Join Presale</Link></li>
+            <li><a href="https://t.me/XombiXNetwork" onClick={closeMenu} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">Join Telegram</a></li>
+            <li><Link to="/contact" onClick={closeMenu} className={linkClass("/contact", "hover:text-green-300")}>Contact</Link></li>
+          </ul>
         </div>
       )}
     </nav>
