@@ -65,10 +65,10 @@ export default function App() {
       {/* Hoparlör kontrol düğmesi - SAĞ ÜST KÖŞE */}
       <button
         onClick={toggleMute}
-        className="fixed top-6 right-6 z-50 p-3 bg-black/60 hover:bg-black/80 text-white rounded-full shadow-lg transition duration-300"
+        className="fixed top-4 right-4 z-[9999] p-3 bg-black/70 hover:bg-black/90 text-white rounded-full shadow-xl transition duration-300"
         aria-label="Toggle Music"
       >
-        {isMuted ? <FaVolumeMute size={20} /> : <FaVolumeUp size={20} />}
+        {isMuted ? <FaVolumeMute size={22} /> : <FaVolumeUp size={22} />}
       </button>
 
       {/* Arkaplan */}
