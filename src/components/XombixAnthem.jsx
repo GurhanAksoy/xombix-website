@@ -6,9 +6,9 @@ export default function XombixAnthem() {
   useEffect(() => {
     const playAnthem = () => {
       if (audioRef.current) {
-        audioRef.current.volume = 0.25; // %25 sesle başla
+        audioRef.current.volume = 0.25;
         audioRef.current.play().catch((err) => {
-          console.warn("Anthem başlatılamadı:", err);
+          console.warn("Audio couldn't start automatically:", err);
         });
         window.removeEventListener("click", playAnthem);
       }
@@ -22,14 +22,16 @@ export default function XombixAnthem() {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-5 right-5 z-50 bg-black/60 backdrop-blur-md rounded-lg p-2 shadow-lg shadow-orange-500/30">
       <audio
         ref={audioRef}
         preload="auto"
         src="/xombix.mp3"
         controls
-        className="w-48 opacity-80 hover:opacity-100 transition-opacity duration-300"
-      />
+        className="w-72 text-white"
+      >
+        Your browser does not support the audio element.
+      </audio>
     </div>
   );
 }
