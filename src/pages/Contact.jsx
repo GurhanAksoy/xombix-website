@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const res = await fetch("https://formspree.io/f/xrbkvgpa", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (res.ok) {
+      form.reset();
+      setSubmitted(true);
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[url('/images/stars.jpg')] bg-cover bg-center flex items-center justify-center py-20 px-4">
       <div className="bg-white/10 backdrop-blur-md border border-orange-500 rounded-2xl p-10 shadow-xl shadow-orange-500/30 w-full max-w-2xl">
@@ -8,11 +32,14 @@ const Contact = () => {
         <p className="text-center text-gray-300 mb-8 italic">
           Reach out to the XombiX mission control. Your transmission will be answered!
         </p>
-        <form
-          action="https://formspree.io/f/xrbkvgpa"
-          method="POST"
-          className="space-y-6"
-        >
+
+        {submitted && (
+          <p className="text-green-400 text-center font-semibold mb-6">
+            Your message has been sent successfully!
+          </p>
+        )}
+
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-orange-400 font-medium mb-1">
               Name
