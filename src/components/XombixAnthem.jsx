@@ -6,7 +6,7 @@ export default function XombixAnthem() {
   useEffect(() => {
     const playAnthem = () => {
       if (audioRef.current) {
-        audioRef.current.volume = 1;
+        audioRef.current.volume = 0.25; // %25 sesle başla
         audioRef.current.play().catch((err) => {
           console.warn("Anthem başlatılamadı:", err);
         });
@@ -22,13 +22,14 @@ export default function XombixAnthem() {
   }, []);
 
   return (
-    <>
+    <div className="fixed bottom-4 right-4 z-50">
       <audio
         ref={audioRef}
         preload="auto"
         src="/xombix.mp3"
-        style={{ display: "none" }}
+        controls
+        className="w-48 opacity-80 hover:opacity-100 transition-opacity duration-300"
       />
-    </>
+    </div>
   );
 }
