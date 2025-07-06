@@ -2,9 +2,10 @@ import React from "react";
 
 export default function Whitepaper() {
   return (
-    <main className="min-h-screen text-gray-100 px-4 sm:px-6 py-12 max-w-4xl mx-auto font-sans leading-relaxed">
+    <main className="relative min-h-screen text-gray-100 px-4 sm:px-6 py-12 max-w-4xl mx-auto font-sans leading-relaxed z-10">
 
-      <div className="flex justify-end mb-6">
+      {/* Sabitlenmiş PDF butonu */}
+      <div className="fixed top-20 right-4 z-40">
         <a
           href="/xombix-whitepaper.pdf"
           download
@@ -14,8 +15,11 @@ export default function Whitepaper() {
         </a>
       </div>
 
-      <h1 className="text-4xl font-extrabold text-orange-400 mb-6 text-center">XombiX Whitepaper</h1>
+      <h1 className="text-4xl font-extrabold text-orange-400 mb-8 text-center drop-shadow-lg">
+        XombiX Whitepaper
+      </h1>
 
+      {/* Bölüm 1 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">1. Introduction</h2>
         <p className="text-base text-gray-200">
@@ -26,6 +30,7 @@ export default function Whitepaper() {
         </p>
       </section>
 
+      {/* Bölüm 2 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">2. Vision & Mission</h2>
         <p className="text-base text-gray-200">
@@ -34,6 +39,7 @@ export default function Whitepaper() {
         </p>
       </section>
 
+      {/* Bölüm 3 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">3. Tokenomics</h2>
         <div className="overflow-x-auto">
@@ -53,7 +59,7 @@ export default function Whitepaper() {
               <tr><td className="py-2 px-4 border border-gray-700">Marketing & Ops</td><td className="py-2 px-4 border border-gray-700">15%</td><td className="py-2 px-4 border border-gray-700">116,550,000</td><td className="py-2 px-4 border border-gray-700">Growth, campaigns</td></tr>
               <tr><td className="py-2 px-4 border border-gray-700">Partnerships</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Strategic tools & allies</td></tr>
               <tr><td className="py-2 px-4 border border-gray-700">DEX Liquidity</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Locked LP pools</td></tr>
-              <tr><td className="py-2 px-4 border border-gray-700">Donations</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Mars Survival Support Fund </td></tr>
+              <tr><td className="py-2 px-4 border border-gray-700">Donations</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Mars Survival Support Fund</td></tr>
             </tbody>
           </table>
         </div>
@@ -64,13 +70,17 @@ export default function Whitepaper() {
         </p>
       </section>
 
+      {/* Bölüm 4 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">4. Presale Vesting</h2>
-        <p className="text-base text-gray-200">Month 0: 100% locked<br />
-        Months 1–6: Linear unlock in 6 equal monthly parts (16.66% per month)<br />
-        Fully unlocked by Month 7</p>
+        <p className="text-base text-gray-200">
+          Month 0: 100% locked<br />
+          Months 1–6: Linear unlock in 6 equal monthly parts (16.66% per month)<br />
+          Fully unlocked by Month 7
+        </p>
       </section>
 
+      {/* Bölüm 5 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">5. Utility</h2>
         <ul className="list-disc pl-6 text-base text-gray-200">
@@ -84,6 +94,7 @@ export default function Whitepaper() {
         </ul>
       </section>
 
+      {/* Bölüm 6 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">6. Roadmap</h2>
         <p className="text-base text-gray-200"><strong>June 2025 – The Signal</strong><br />Website launch, Whitepaper release, Presale opens</p>
@@ -92,11 +103,17 @@ export default function Whitepaper() {
         <p className="text-base text-gray-200"><strong>2026 and Beyond</strong><br />Written by the community. No fixed path. DAO decides. Memes guide.</p>
       </section>
 
+      {/* Bölüm 7 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">7. Team</h2>
-        <p className="text-base text-gray-200">No heroes. No faces. No LinkedIn.<br />We believe in building systems, not personal brands.<br />XombiX is anonymous by design — not to escape, but to stay culture-first.</p>
+        <p className="text-base text-gray-200">
+          No heroes. No faces. No LinkedIn.<br />
+          We believe in building systems, not personal brands.<br />
+          XombiX is anonymous by design — not to escape, but to stay culture-first.
+        </p>
       </section>
 
+      {/* Bölüm 8 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">8. Security</h2>
         <ul className="list-disc pl-6 text-base text-gray-200">
@@ -108,16 +125,26 @@ export default function Whitepaper() {
         </ul>
       </section>
 
+      {/* Bölüm 9 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">9. Philosophy</h2>
-        <p className="text-base text-gray-200">We don’t chase hype. We mock it.<br />We don’t pitch vision. We deliver satire with structure.<br />XombiX is a meme protocol, a mirror to the market, and a resistance movement disguised as a token.</p>
+        <p className="text-base text-gray-200">
+          We don’t chase hype. We mock it.<br />
+          We don’t pitch vision. We deliver satire with structure.<br />
+          XombiX is a meme protocol, a mirror to the market, and a resistance movement disguised as a token.
+        </p>
       </section>
 
+      {/* Bölüm 10 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">10. Disclaimer</h2>
-        <p className="text-base text-gray-200">Not financial advice. DYOR.<br />If a project screams “to the moon” without explaining how gravity works — run.</p>
+        <p className="text-base text-gray-200">
+          Not financial advice. DYOR.<br />
+          If a project screams “to the moon” without explaining how gravity works — run.
+        </p>
       </section>
 
+      {/* Footer */}
       <footer className="mt-16 text-center text-gray-300 text-base leading-relaxed">
         <p className="font-semibold italic mb-2">
           This is not just a token. It's a torch.<br />
@@ -130,6 +157,7 @@ export default function Whitepaper() {
           XombiX Project © 2025 | MemeDAO powered | www.xombix.com
         </p>
       </footer>
+
     </main>
   );
 }
