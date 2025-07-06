@@ -2,12 +2,14 @@ import React, { useState } from "react";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [emailValue, setEmailValue] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const form = e.target;
     const data = new FormData(form);
+    data.append("_replyto", emailValue); // Bu satır: Reply-To garantisi sağlar
 
     const res = await fetch("https://formspree.io/f/xrbkvgpa", {
       method: "POST",
@@ -20,6 +22,7 @@ const Contact = () => {
     if (res.ok) {
       form.reset();
       setSubmitted(true);
+      setEmailValue(""); // temizle
     } else {
       alert("Something went wrong. Please try again.");
     }
@@ -61,6 +64,8 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
+              value={emailValue}
+              onChange={(e) => setEmailValue(e.target.value)}
               required
               className="w-full px-4 py-2 rounded-xl bg-black/60 text-white placeholder-gray-400 border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               placeholder="you@example.com"
