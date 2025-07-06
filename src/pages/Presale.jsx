@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Presale() {
   return (
-    <main className="flex-1 pt-16 text-white px-4 sm:px-6 pb-12 font-sans overflow-hidden z-10">
+    <main className="flex-1 pt-24 text-white px-4 sm:px-6 pb-12 font-sans overflow-hidden z-10">
       <section className="max-w-2xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mb-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 mb-8 drop-shadow-lg">
           Join the XombiX Presale
         </h1>
 
-        <p className="mb-4 text-base md:text-lg text-gray-200">
-          Only <span className="font-semibold text-white">500 participants</span> will be accepted.
+        <p className="mb-4 text-base md:text-lg text-orange-300 font-medium">
+          Only <span className="text-white font-bold">500 participants</span> will be accepted.
         </p>
         <p className="mb-4 text-base md:text-lg text-gray-200">
           Fixed amount: <span className="text-green-400 font-semibold">77,700 XOMBIX</span> per wallet.
@@ -19,7 +19,7 @@ export default function Presale() {
         </p>
 
         <button
-          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl shadow-md transition duration-300 text-lg cursor-not-allowed"
+          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl shadow-md transition duration-300 text-lg opacity-80 cursor-not-allowed"
           disabled
         >
           🔒 Presale Not Open Yet
