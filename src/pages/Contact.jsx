@@ -8,7 +8,11 @@ const Contact = () => {
         <p className="text-center text-gray-300 mb-8 italic">
           Reach out to the XombiX mission control. Your transmission will be answered!
         </p>
-        <form className="space-y-6">
+        <form
+          action="https://formspree.io/f/xrbkvgpa"
+          method="POST"
+          className="space-y-6"
+        >
           <div>
             <label htmlFor="name" className="block text-orange-400 font-medium mb-1">
               Name
@@ -16,6 +20,8 @@ const Contact = () => {
             <input
               type="text"
               id="name"
+              name="name"
+              required
               className="w-full px-4 py-2 rounded-xl bg-black/60 text-white placeholder-gray-400 border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               placeholder="Your Name"
             />
@@ -27,6 +33,8 @@ const Contact = () => {
             <input
               type="email"
               id="email"
+              name="email"
+              required
               className="w-full px-4 py-2 rounded-xl bg-black/60 text-white placeholder-gray-400 border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               placeholder="you@example.com"
             />
@@ -37,7 +45,9 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
+              name="message"
               rows="4"
+              required
               className="w-full px-4 py-2 rounded-xl bg-black/60 text-white placeholder-gray-400 border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               placeholder="Your Message..."
             ></textarea>
