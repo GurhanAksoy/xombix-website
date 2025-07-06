@@ -6,7 +6,7 @@ export default function XombixAnthem() {
   useEffect(() => {
     const playAnthem = () => {
       if (audioRef.current) {
-        audioRef.current.volume = 0.20;
+        audioRef.current.volume = 0.10;
         audioRef.current.play().catch((err) => {
           console.warn("Audio couldn't start automatically:", err);
         });
