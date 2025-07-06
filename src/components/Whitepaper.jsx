@@ -4,7 +4,7 @@ export default function Whitepaper() {
   return (
     <main className="relative min-h-screen text-gray-100 px-4 sm:px-6 py-12 max-w-4xl mx-auto font-sans leading-relaxed z-10">
 
-      {/* Sabitlenmiş PDF butonu */}
+      {/* Sabit Download PDF Butonu */}
       <div className="fixed top-20 right-4 z-40">
         <a
           href="/xombix-whitepaper.pdf"
@@ -15,31 +15,22 @@ export default function Whitepaper() {
         </a>
       </div>
 
-      <h1 className="text-4xl font-extrabold text-orange-400 mb-8 text-center drop-shadow-lg">
-        XombiX Whitepaper
-      </h1>
+      <h1 className="text-4xl font-extrabold text-orange-400 mb-6 text-center mt-4">XombiX Whitepaper</h1>
 
-      {/* Bölüm 1 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">1. Introduction</h2>
         <p className="text-base text-gray-200">
-          In a sea of forks, fake promises, and follower-bought charts, XombiX arrives as a conscious anomaly.
-          We’re not here to impress — we’re here to expose.
-          Not to build castles in the sky — but to meme the broken system into awareness.
-          XombiX is not a parody. It’s a protocol dressed in irony.
+          In a sea of forks, fake promises, and follower-bought charts, XombiX arrives as a conscious anomaly. We’re not here to impress — we’re here to expose. Not to build castles in the sky — but to meme the broken system into awareness. XombiX is not a parody. It’s a protocol dressed in irony.
         </p>
       </section>
 
-      {/* Bölüm 2 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">2. Vision & Mission</h2>
         <p className="text-base text-gray-200">
-          We believe memes are the mythology of modern culture. XombiX unites self-aware investors into a decentralized movement powered by cultural intelligence and creative rebellion.
-          We don’t promise revolution. We promise recognition — of the absurdity, and the tools to outgrow it.
+          We believe memes are the mythology of modern culture. XombiX unites self-aware investors into a decentralized movement powered by cultural intelligence and creative rebellion. We don’t promise revolution. We promise recognition — of the absurdity, and the tools to outgrow it.
         </p>
       </section>
 
-      {/* Bölüm 3 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">3. Tokenomics</h2>
         <div className="overflow-x-auto">
@@ -59,18 +50,17 @@ export default function Whitepaper() {
               <tr><td className="py-2 px-4 border border-gray-700">Marketing & Ops</td><td className="py-2 px-4 border border-gray-700">15%</td><td className="py-2 px-4 border border-gray-700">116,550,000</td><td className="py-2 px-4 border border-gray-700">Growth, campaigns</td></tr>
               <tr><td className="py-2 px-4 border border-gray-700">Partnerships</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Strategic tools & allies</td></tr>
               <tr><td className="py-2 px-4 border border-gray-700">DEX Liquidity</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Locked LP pools</td></tr>
-              <tr><td className="py-2 px-4 border border-gray-700">Donations</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Mars Survival Support Fund</td></tr>
+              <tr><td className="py-2 px-4 border border-gray-700">Donations</td><td className="py-2 px-4 border border-gray-700">10%</td><td className="py-2 px-4 border border-gray-700">77,700,000</td><td className="py-2 px-4 border border-gray-700">Mars Survival Support Fund </td></tr>
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400 mt-4 italic">
+        <p className="text-sm text-gray-400 mt-4 italic text-center">
           * Going to Mars takes more than dreams. Colonies need culture and funding.<br />
           That’s why XombiX created the Mars Survival Support Fund.<br />
           DAO-managed. Meme-powered.
         </p>
       </section>
 
-      {/* Bölüm 4 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">4. Presale Vesting</h2>
         <p className="text-base text-gray-200">
@@ -80,7 +70,6 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      {/* Bölüm 5 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">5. Utility</h2>
         <ul className="list-disc pl-6 text-base text-gray-200">
@@ -94,16 +83,29 @@ export default function Whitepaper() {
         </ul>
       </section>
 
-      {/* Bölüm 6 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">6. Roadmap</h2>
-        <p className="text-base text-gray-200"><strong>June 2025 – The Signal</strong><br />Website launch, Whitepaper release, Presale opens</p>
-        <p className="text-base text-gray-200"><strong>Q3 2025 – Formation</strong><br />MemeDAO launch, Staking + Meme-to-Earn, Viral campaigns</p>
-        <p className="text-base text-gray-200"><strong>Q4 2025 – Cultivation</strong><br />DEX listings, NFT shrines, Strategic partnerships</p>
-        <p className="text-base text-gray-200"><strong>2026 and Beyond</strong><br />Written by the community. No fixed path. DAO decides. Memes guide.</p>
+        <p className="text-base text-gray-200">
+          <strong>June 2025 – The Signal</strong><br />
+          Website launch, Whitepaper release, Presale opens
+        </p>
+        <p className="text-base text-gray-200">
+          <strong>Q3 2025 – Formation</strong><br />
+          MemeDAO launch, Staking + Meme-to-Earn, Viral campaigns
+        </p>
+        <p className="text-base text-gray-200">
+          <strong>Q4 2025 – Cultivation</strong><br />
+          DEX listings, NFT shrines, Strategic partnerships
+        </p>
+        <p className="text-base text-gray-200">
+          <strong>2026 and Beyond</strong><br />
+          Written by the community. No fixed path. DAO decides. Memes guide.<br />
+          Its future will be shaped by the collective — not dictated by a roadmap.<br />
+          The plan is no plan. The structure is emergent.<br />
+          Like memes, XombiX evolves in real time.
+        </p>
       </section>
 
-      {/* Bölüm 7 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">7. Team</h2>
         <p className="text-base text-gray-200">
@@ -113,7 +115,6 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      {/* Bölüm 8 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">8. Security</h2>
         <ul className="list-disc pl-6 text-base text-gray-200">
@@ -125,7 +126,6 @@ export default function Whitepaper() {
         </ul>
       </section>
 
-      {/* Bölüm 9 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">9. Philosophy</h2>
         <p className="text-base text-gray-200">
@@ -135,7 +135,6 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      {/* Bölüm 10 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">10. Disclaimer</h2>
         <p className="text-base text-gray-200">
@@ -144,12 +143,12 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      {/* Footer */}
       <footer className="mt-16 text-center text-gray-300 text-base leading-relaxed">
         <p className="font-semibold italic mb-2">
           This is not just a token. It's a torch.<br />
           We carry memes instead of weapons.<br />
-          We build laughter into the blockchain.
+          We build laughter into the blockchain.<br />
+          We simply say: XombiX
         </p>
         <p className="text-orange-300 font-extrabold text-xl mb-4">XombiX</p>
         <p className="text-sm text-gray-400">
