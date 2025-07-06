@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Whitepaper() {
   return (
-    <main className="relative min-h-screen text-white px-4 sm:px-6 py-16 max-w-4xl mx-auto font-sans leading-relaxed tracking-wide">
+    <main className="relative min-h-screen text-white px-4 sm:px-6 py-16 max-w-4xl mx-auto font-sans leading-relaxed tracking-wide z-10">
 
-      {/* Sabit PDF butonu sağ üst */}
-      <div className="fixed top-4 right-4 z-50">
+      {/* PDF butonu — ses butonuyla çakışmaması için daha aşağıda */}
+      <div className="fixed top-20 right-4 z-40">
         <a
           href="/xombix-whitepaper.pdf"
           download
@@ -18,6 +18,7 @@ export default function Whitepaper() {
       {/* Başlık */}
       <h1 className="text-4xl font-extrabold text-orange-400 mb-10 text-center drop-shadow-lg">XombiX Whitepaper</h1>
 
+      {/* Section 1 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">1. Introduction</h2>
         <p className="text-base drop-shadow-sm">
@@ -28,6 +29,7 @@ export default function Whitepaper() {
         </p>
       </section>
 
+      {/* Section 2 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">2. Vision & Mission</h2>
         <p className="text-base drop-shadow-sm">
@@ -36,6 +38,7 @@ export default function Whitepaper() {
         </p>
       </section>
 
+      {/* Section 3 */}
       <section className="mb-12">
         <h2 className="text-2xl text-orange-300 font-bold mb-4">3. Tokenomics</h2>
         <div className="overflow-x-auto">
@@ -66,8 +69,7 @@ export default function Whitepaper() {
         </p>
       </section>
 
-      {/* Diğer bölümler aynı şekilde korunarak devam ediyor */}
-      {/* ... */}
+      {/* Diğer içerikler buraya eklenebilir */}
     </main>
   );
 }
