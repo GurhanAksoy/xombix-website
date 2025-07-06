@@ -6,18 +6,23 @@ export default function XombixAnthem() {
   useEffect(() => {
     const playAnthem = () => {
       if (audioRef.current) {
-        audioRef.current.volume = 0.10;
-        audioRef.current.play().catch((err) => {
-          console.warn("Audio couldn't start automatically:", err);
-        });
+        audioRef.current.volume = 0.1; // %10 sesle başlat
+        audioRef.current
+          .play()
+          .catch((err) => console.warn("Autoplay blocklandı:", err));
+        // Tetikleyicileri kaldır
         window.removeEventListener("click", playAnthem);
+        window.removeEventListener("touchstart", playAnthem);
       }
     };
 
+    // Masaüstü ve mobil için dinleyiciler
     window.addEventListener("click", playAnthem);
+    window.addEventListener("touchstart", playAnthem);
 
     return () => {
       window.removeEventListener("click", playAnthem);
+      window.removeEventListener("touchstart", playAnthem);
     };
   }, []);
 
