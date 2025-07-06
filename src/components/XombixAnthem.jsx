@@ -6,17 +6,15 @@ export default function XombixAnthem() {
   useEffect(() => {
     const playAnthem = () => {
       if (audioRef.current) {
-        audioRef.current.volume = 0.1; // %10 sesle başlat
+        audioRef.current.volume = 0.25; // Başlangıç sesi %25 (artık rahatsız etmiyor)
         audioRef.current
           .play()
-          .catch((err) => console.warn("Autoplay blocklandı:", err));
-        // Tetikleyicileri kaldır
+          .catch((err) => console.warn("Autoplay engellendi:", err));
         window.removeEventListener("click", playAnthem);
         window.removeEventListener("touchstart", playAnthem);
       }
     };
 
-    // Masaüstü ve mobil için dinleyiciler
     window.addEventListener("click", playAnthem);
     window.addEventListener("touchstart", playAnthem);
 
@@ -31,7 +29,7 @@ export default function XombixAnthem() {
       <audio
         ref={audioRef}
         preload="auto"
-        src="/xombix.mp3"
+        src="/xombix_quiet.mp3" // Yeni düşük sesli dosya
         controls
         className="w-72 text-white"
       >
