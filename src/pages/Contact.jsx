@@ -9,7 +9,7 @@ const Contact = () => {
 
     const form = e.target;
     const data = new FormData(form);
-    data.append("_replyto", emailValue); // Bu satır: Reply-To garantisi sağlar
+    data.append("_replyto", emailValue);
 
     const res = await fetch("https://formspree.io/f/xrbkvgpa", {
       method: "POST",
@@ -22,14 +22,14 @@ const Contact = () => {
     if (res.ok) {
       form.reset();
       setSubmitted(true);
-      setEmailValue(""); // temizle
+      setEmailValue("");
     } else {
       alert("Something went wrong. Please try again.");
     }
   };
 
   return (
-    <div className="min-h-screen bg-[url('/images/stars.jpg')] bg-cover bg-center flex items-center justify-center py-20 px-4">
+    <div className="min-h-fit bg-[url('/images/stars.jpg')] bg-cover bg-center flex items-center justify-center py-8 px-4">
       <div className="bg-white/10 backdrop-blur-md border border-orange-500 rounded-2xl p-10 shadow-xl shadow-orange-500/30 w-full max-w-2xl">
         <h2 className="text-4xl font-bold text-orange-500 mb-4 text-center drop-shadow-md">Contact Us</h2>
         <p className="text-center text-gray-300 mb-8 italic">
